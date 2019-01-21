@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Device</title>
+</head>
+<body>
+    <header class="main-header">
+        <nav class="main-navigation">
+            <a class="main-navigation-logo">
+                <img src="http://placehold.it/163x35" width="163" height="35" alt="Логотип интернет-магазина Device">
+            </a>
+            <div class="user-navigation">
+                <p class="site-search">
+                    <input class="site-search-field" type="text" placeholder="Поиск по сайту">
+                    <a href="#" class="site-search-button">Найти</a>
+                </p>
+                <a href="#" class="login-link">Войти</a>
+                <a href="#" class="compare-link">Сравнить</a>
+                <a href="#" class="cart-link">Корзина</a>
+            </div>
+            <ul class="site-navigation">
+                <li class="site-navigation-item">
+                    <a href="#">Каталог товаров</a>
+                    <ul class="sub-navigation">
+                        <li class="sub-navigation-item"><a href="#">Виртуальная реальность</a></li>
+                        <li class="sub-navigation-item"><a href="#">Фитнес-браслеты</a></li>
+                        <li class="sub-navigation-item"><a href="#">Квадрокоптеры</a></li>
+                        <li class="sub-navigation-item"><a href="#">Моноподы для селфи</a></li>
+                        <li class="sub-navigation-item"><a href="#">Умные часы</a></li>
+                        <li class="sub-navigation-item"><a href="#">Экшн-камеры</a></li>
+                    </ul>
+                </li>
+                <li class="site-navigation-item"><a href="#">Доставка</a></li>
+                <li class="site-navigation-item"><a href="#">Гарантия</a></li>
+                <li class="site-navigation-item"><a href="#">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Моноподы для селфи</h1>
+        <section class="breadcrumbs">
+            <ul class="breadcrumbs-list">
+                <li class="breadcrumbs-item"><a href="index.html">Главная</a></li>
+                <li class="breadcrumbs-item"><a href="catalog.html">Каталог товаров</a></li>
+                <li class="breadcrumbs-item"><a>Моноподы для селфи</a></li>
+            </ul>
+        </section>
+        <section class="catalog-filter">
+            <h2>Фильтр</h2>
+            <form method="GET" action="">
+                <fieldset class="filter-price">
+                    <legend>Стоимость</legend>
+                    <div class="filter-price-slider">
+                        <button class="slider-button slider-button-min" type="button">
+                            <span class="visually-hidden">Увеличить цену</span>
+                        </button>
+                        <button class="slider-button slider-button-min" type="button">
+                            <span class="visually-hidden">Уменьшить цену</span>
+                        </button>
+                        <label>от <input id="filter-price-min" type="text" value="0" disabled /></label>
+                        <label>до <input id="filter-price-max" type="text" value="5000" disabled /></label>
+                    </div>
+                </fieldset>
+                <fieldset class="filter-colors">
+                    <legend>Цвет</legend>
+                    <ul class="filter-colors-list">
+                        <li class="filter-colors-item">
+                            <label>
+                                <input type="checkbox" name="filter-colors[]" value="black" checked />Черный
+                            </label>
+                        </li>
+                        <li class="filter-colors-item">
+                            <label>
+                                <input type="checkbox" name="filter-colors[]" value="white" />Белый
+                            </label>
+                        </li>
+                        <li class="filter-colors-item">
+                            <label>
+                                <input type="checkbox" name="filter-colors[]" value="blue" checked />Синий
+                            </label>
+                        </li>
+                        <li class="filter-colors-item">
+                            <label>
+                                <input type="checkbox" name="filter-colors[]" value="red" checked />Красный
+                            </label>
+                        </li>
+                        <li class="filter-colors-item">
+                            <label>
+                                <input type="checkbox" name="filter-colors[]" value="pink" />Розовый
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset class="filter-bluetooth">
+                    <legend>Bluetooth</legend>
+                    <label><input type="radio" name="filter-bluetooth" value="yes" /> Есть</label>
+                    <label><input type="radio" name="filter-bluetooth" value="no" /> Нет</label>
+                </fieldset>
+                <button class="button" type="submit">Показать</button>
+            </form>
+        </section>
+        <section class="product-list">
+
+        </section>
+    </main>
+    <footer class="main-footer">
+        <a class="footer-navigation-logo">
+            <img src="http://placehold.it/163x35" width="163" height="35" alt="Логотип интернет-магазина Device">
+        </a>
+        <div class="user-navigation">
+            <a href="#" class="login-link">Войти</a>
+            <a href="#" class="compare-link">Сравнить</a>
+            <a href="#" class="cart-link">Корзина</a>
+        </div>
+        <p class="address">г. Москва, ул. Строителей, 15</p>
+        <ul class="site-navigation">
+            <li class="site-navigation-item"><a href="#">Доставка</a></li>
+            <li class="site-navigation-item"><a href="#">Гарантия</a></li>
+            <li class="site-navigation-item"><a href="#">Контакты</a></li>
+        </ul>
+        <p class="phone">Тел.:<a href="tel:+7(495)495-95-95">+7 (495) 495-95-95</a></p>
+        <ul class="social-links">
+            <li class="social-links-item">
+                <a href="http://facebook.com">
+                    <img class="social-image" src="http://placehold.it/32x32" width="32" height="32">
+                    <span class="visually-hidden">Facebook</span>
+                </a>
+            </li>
+            <li class="social-links-item">
+                <a href="http://instagram.com">
+                    <img class="social-image" src="http://placehold.it/32x32" width="32" height="32">
+                    <span class="visually-hidden">Instagram</span>
+                </a>
+            </li>
+            <li class="social-links-item">
+                <a href="http://twitter.com">
+                    <img class="social-image" src="http://placehold.it/32x32" width="32" height="32">
+                    <span class="visually-hidden">Twitter</span>
+                </a>
+            </li>
+        </ul>
+        <a class="html-academy-logo">
+            <img src="http://placehold.it/27x35" width="27" height="35" alt="Логотип HTML Академии">
+        </a>
+    </footer>
+</body>
+</html>
