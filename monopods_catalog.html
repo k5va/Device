@@ -13,10 +13,13 @@
                 <img src="http://placehold.it/163x35" width="163" height="35" alt="Логотип интернет-магазина Device">
             </a>
             <div class="user-navigation">
-                <p class="site-search">
-                    <input class="site-search-field" type="text" placeholder="Поиск по сайту">
-                    <a href="#" class="site-search-button">Найти</a>
-                </p>
+                <form class="site-search-form" action="https://echo.htmlacademy.ru" method="GET">
+                    <label>
+                        <p class="visually-hidden">Поле для ввода строки поиска по сайту</p>
+                        <input class="site-search-field" type="text" placeholder="Поиск по сайту">
+                    </label>
+                    <button type="submit" href="#" class="site-search-button">Найти</button>
+                </form>
                 <a href="#" class="login-link">Войти</a>
                 <a href="#" class="compare-link">Сравнить</a>
                 <a href="#" class="cart-link">Корзина</a>
