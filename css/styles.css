@@ -1,0 +1,36 @@
+/*External fonts*/
+@font-face {
+    font-family: 'gilroy-extrabold';
+    src: url('../fonts/gilroy-extrabold-webfont.woff2') format('woff2'),
+         url('../fonts/gilroy-extrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'gilroy-light';
+    src: url('../fonts/gilroy-light-webfont.woff2') format('woff2'),
+         url('../fonts/gilroy-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*Base styling*/
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    line-height: 2;
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* Header */
+
+/*special offers*/
+
+.special-offers-title {
+    font-family: "gilroy-extrabold";
+    font-size: 47px;
+    font-weight: 800;
+    font-style: normal;
+}

@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Device</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic" rel="stylesheet">
 </head>
 <body>
     <header class="main-header">
@@ -55,7 +57,7 @@
         </section>
         <section class="catalog-filter">
             <h2>Фильтр</h2>
-            <form method="POST" action="https://echo.htmlacademy.ru">
+            <form method="GET" action="https://echo.htmlacademy.ru">
                 <fieldset class="filter-price">
                     <legend>Стоимость</legend>
                     <div class="filter-price-slider">
@@ -109,7 +111,20 @@
         </section>
         <section class="products">
             <div class="products-sort">
-                <!-- TODO: -->
+                <h2>Сортировка:</h2>
+                <ul class="products-sort-type">
+                    <li class="products-sort-type-item selected"><a href="">По цене</a></li>
+                    <li class="products-sort-type-item"><a href="">По типу</a></li>
+                    <li class="products-sort-type-item"><a href="">По популярности</a></li>
+                </ul>
+                <div class="products-sort-order">
+                    <a class="products-sort-order-ascend" href="">
+                        <span class="visually-hidden">По возрастанию</span>
+                    </a>
+                    <a class="products-sort-order-descend selected" href="">
+                        <span class="visually-hidden">По убыванию</span>
+                    </a>
+                </div>
             </div>
             <ul class="products-list">
                 <li class="products-item">
