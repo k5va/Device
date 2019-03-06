@@ -24,13 +24,209 @@ body {
     font-style: normal;
 }
 
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.button {
+    font-family: "gilroy-extrabold";
+    font-size: 18px;
+    line-height: 1.33;
+    text-transform: uppercase;
+}
+
 /* Header */
+
+.main-header {
+    color: black;
+}
+
+.site-navigation {
+    font-family: "gilroy-extrabold";
+    font-size: 18px;
+    line-height: 1.33;
+    text-transform: uppercase;
+}
+
+.sub-navigation {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    line-height: 2.4;
+    font-weight: 300;
+    font-style: normal;
+    text-transform: none;
+}
 
 /*special offers*/
 
 .special-offers-title {
     font-family: "gilroy-extrabold";
     font-size: 47px;
+    line-height: 1.19;
     font-weight: 800;
+    font-style: normal;
+}
+
+.special-offers-features th {
+    font-size: 13px;
+    line-height: 1.5;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.special-offers-features td {
+    font-family: "gilroy-light";
+    font-size: 36px;
+    line-height: 1.33;
+    font-weight: 300;
+    font-style: normal;
+}
+
+/*product types*/
+
+.product-type-name {
+    font-family: "gilroy-extrabold";
+    font-size: 18px;
+    line-height: 1.33;
+    font-weight: 800;
+    font-style: normal;
+}
+
+/* Services*/
+.service-name {
+    font-family: "gilroy-extrabold";
+    font-size: 47px;
+    line-height: 1.02;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.service-description {
+
+}
+
+/* about us*/
+.about-us-header {
+    font-family: "gilroy-extrabold";
+    font-size: 47px;
+    line-height: 1.02;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.transport-companies-list {
+    font-weight: bold;
+}
+
+/*Footer*/
+
+.main-footer .user-navigation {
+    font-size: 15px;
+    line-height: 2.4;
+}
+
+/*Modals*/
+.modal-write-us label {
+    font-family: "gilroy-extrabold";
+    font-size: 18px;
+    line-height: 1.33;
+    font-weight: 800;
+    font-style: normal;
+}
+
+/*Catalog */
+.catalog-header {
+    font-family: "gilroy-extrabold";
+    font-size: 47px;
+    line-height: 1.02;
+    font-weight: 800;
+    font-style: normal;
+}
+
+/*breadcrumbs*/
+.breadcrumbs-item {
+    font-size: 14px;
+    line-height: 1.71;
+    font-weight: 300;
+    font-style: normal;
+}
+
+/*catalog-filter*/
+.catalog-filter-header {
+    font-family: "gilroy-extrabold";
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 800;
+    letter-spacing: 3.2px;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+.catalog-filter legend {
+    font-family: "gilroy-extrabold";
+    font-size: 18px;
+    line-height: 1.33;
+    font-weight: 800;
+    letter-spacing: 0.2px;
+    font-style: normal;
+}
+
+.catalog-filter label {
+    font-size: 14px;
+    line-height: 2.86;
+    font-weight: 300;
+    font-style: normal;
+}
+
+/*Products*/
+.products-sort-header {
+    font-family: "gilroy-extrabold";
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 800;
+    letter-spacing: 3.2px;
+    font-style: normal;
+    text-transform: uppercase;  
+}
+
+.products-sort-type-item {
+    font-size: 14px;
+    line-height: 1.29;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.compare-button {
+    font-size: 13px;
+    line-height: 2.77;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.product-name {
+    font-family: "gilroy-extrabold";
+    font-size: 18px;
+    line-height: 1.33;
+    font-weight: 800;
+    letter-spacing: 0.2px;
+    font-style: normal;
+}
+
+.product-price {
+    font-family: "gilroy-light";
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 300;
+    letter-spacing: 0.2px;
+    font-style: normal;
+}
+
+.pagination-item {
+    font-family: "gilroy-extrabold";
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 800;
+    letter-spacing: 3.2px;
     font-style: normal;
 }
