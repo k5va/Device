@@ -16,12 +16,39 @@
 }
 
 /*Base styling*/
+
+*, 
+*::before, 
+*::after {
+    box-sizing: inherit;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 15px;
     line-height: 2;
     font-weight: 300;
     font-style: normal;
+
+    box-sizing: border-box;
+    min-width: 1200px;
 }
 
 a {
@@ -36,10 +63,32 @@ a {
     text-transform: uppercase;
 }
 
+.hidden {
+    display: none;
+}
+
+/* main page*/
+.main-container {
+    width: 1160px;
+    margin: 0 auto;
+}
+
 /* Header */
 
 .main-header {
     color: black;
+    background-color: #f7e296;
+
+    width: 1160px;
+    height: 300px;
+    margin: 40px auto 0;
+
+/*     position: relative;
+    z-index: 1; */
+}
+
+.user-navigation {
+    display: flex;
 }
 
 .site-navigation {
@@ -47,6 +96,24 @@ a {
     font-size: 18px;
     line-height: 1.33;
     text-transform: uppercase;
+
+    list-style: none;
+    padding: 0;
+    margin: 0 60px 0 60px;
+
+    display: flex;
+}
+
+.site-navigation-item:first-child {
+    margin-right: 320px;
+}
+
+.site-navigation-item:nth-child(2) {
+    margin-right: 40px;
+}
+
+.site-navigation-item:nth-child(3) {
+    margin-right: auto;
 }
 
 .sub-navigation {
@@ -56,9 +123,41 @@ a {
     font-weight: 300;
     font-style: normal;
     text-transform: none;
+
+    list-style: none;
+    padding: 0;
+
+    display: none;
+    flex-wrap: wrap;
+}
+
+.site-navigation-item:first-child:hover > .sub-navigation {
+    display: flex;
 }
 
 /*special offers*/
+
+.special-offers {
+    margin-top: -150px;
+}
+
+.special-offers-list {
+    list-style: none;
+}
+
+.special-offers-controls {
+    display: none;
+}
+
+.special-offers-item {
+    padding-left: 500px;
+    min-height: 550px;
+}
+
+.special-offers-image {
+    position: absolute;
+    margin-left: -500px;
+}
 
 .special-offers-title {
     font-family: "gilroy-extrabold";
@@ -85,6 +184,34 @@ a {
 
 /*product types*/
 
+.product-types-list {
+    list-style: none;
+    padding: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product-types-item {
+    width: 160px;
+    margin-right: 40px;
+}
+
+.product-types-item:last-child {
+    margin-right: 0;
+}
+
+.product-type-image {
+    height: 160px;
+    margin: 0;
+
+    background-color: rgba(240, 197, 46, 0.5);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .product-type-name {
     font-family: "gilroy-extrabold";
     font-size: 18px;
@@ -94,19 +221,77 @@ a {
 }
 
 /* Services*/
+
+.services {
+    background-color: #e5e5e5;
+
+    min-height: 200px;
+}
+
+.services-list {
+    list-style: none;
+    padding: 0;
+}
+
+.services-item {
+    position: relative;
+}
+
+.service-details {
+    position: absolute;
+    margin-left: 400px;
+    top: 0;
+
+    display: none;
+}
+
+.check-box:checked + .service-details {
+    display: block;
+}
+
 .service-name {
     font-family: "gilroy-extrabold";
     font-size: 47px;
     line-height: 1.02;
     font-weight: 800;
     font-style: normal;
+
+    margin: 0;
 }
 
 .service-description {
+    width: 437px;
+}
 
+.service-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/*Partners*/
+.partners-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+}
+
+.partners-list-item {
+    margin-right: 40px;
+}
+
+.partners-list-item:last-child {
+    margin-right: 0;
 }
 
 /* about us*/
+
+.about-us-contancts-wrapper {
+    display: flex;
+}
+
 .about-us-header {
     font-family: "gilroy-extrabold";
     font-size: 47px;
@@ -121,9 +306,38 @@ a {
 
 /*Footer*/
 
-.main-footer .user-navigation {
+.main-footer {
+    background-color: #464646;
+}
+
+.footer-user-navigation {
     font-size: 15px;
     line-height: 2.4;
+
+    display: flex;
+}
+
+.footer-contacts-site-navigation {
+    display: flex;
+}
+
+.footer-social-links-logo {
+    display: flex;
+}
+
+.footer-site-navigation {
+    list-style: none;
+    padding: 0;
+    
+    display: flex;
+}
+
+.footer-social-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+    display: flex;
 }
 
 /*Modals*/
