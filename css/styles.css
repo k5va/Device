@@ -51,6 +51,9 @@ body {
 
     box-sizing: border-box;
     min-width: 1200px;
+
+    display: flex;
+    flex-direction: column;
 }
 
 a {
@@ -63,6 +66,18 @@ a {
     font-size: 18px;
     line-height: 1.33;
     text-transform: uppercase;
+
+    background-image: linear-gradient(#f4d361, #f4d361);
+    background-size: 100% 8px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    padding-right: 10px;
+    padding-left: 10px; 
+}
+
+.button:hover {
+    background-size: 100%;
 }
 
 .hidden {
@@ -84,13 +99,59 @@ a {
     width: 1160px;
     height: 300px;
     margin: 40px auto 0;
+    padding: 0 60px;
 
 /*     position: relative;
     z-index: 1; */
 }
 
+.main-navigation-logo {
+    font-family: "gilroy-extrabold";
+    font-size: 48px;
+    line-height: 1;
+
+    color: #000;
+    
+    display: block;
+    margin: -25px 0 35px 0;
+}
+
 .user-navigation {
     display: flex;
+    margin-bottom: 45px;
+}
+
+.site-search-form {
+    min-width: 440px;
+    margin-right: 100px;
+}
+
+.site-search-field {
+    background-color: transparent;
+    border: none;
+
+    width: 340px;
+}
+
+.site-search-field:focus {
+    outline: none;
+    border-bottom: 1px solid #000;
+}
+
+.site-search-button {
+    display: none;
+}
+
+.site-search-field:focus + .site-search-button {
+    display: inline;
+}
+
+.user-link {
+    display: none;
+}
+
+.logout-link {
+    display: none;
 }
 
 .site-navigation {
@@ -101,7 +162,7 @@ a {
 
     list-style: none;
     padding: 0;
-    margin: 0 60px 0 60px;
+    margin: 0;
 
     display: flex;
 }
@@ -128,14 +189,34 @@ a {
 
     list-style: none;
     padding: 0;
+    width: 600px;
 
     display: none;
-    flex-wrap: wrap;
 }
 
 .site-navigation-item:first-child:hover > .sub-navigation {
     display: flex;
+    flex-wrap: wrap;
+
+    position: absolute;
 }
+
+.sub-navigation-item {
+    margin-right: 40px;
+}
+
+.sub-navigation-item:nth-child(3n + 1) {
+    min-width: 200px;
+}
+
+.sub-navigation-item:nth-child(3n + 2) {
+    min-width: 160px;
+}
+
+.sub-navigation-item:nth-child(6n) {
+    min-width: 200px;
+}
+
 
 /*special offers*/
 
@@ -247,8 +328,16 @@ a {
     display: none;
 }
 
-.check-box:checked + .service-details {
+.check-box:checked ~ .service-details {
     display: block;
+}
+
+.check-box:checked + .button {
+    width: 278px;
+
+    color: #f7e184;
+    background-color: #000;
+    background-image: none;
 }
 
 .service-name {

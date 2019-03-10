@@ -12,16 +12,14 @@
 <body>
     <header class="main-header">
         <nav class="main-navigation">
-            <a class="main-navigation-logo">
-                <img src="http://placehold.it/163x35" width="163" height="35" alt="Логотип интернет-магазина Device">
-            </a>
+            <a class="main-navigation-logo">DEVICE</a>
             <div class="user-navigation">
                 <form class="site-search-form" action="https://echo.htmlacademy.ru" method="GET">
-                    <label>
-                        <p class="visually-hidden">Поле для ввода строки поиска по сайту</p>
-                        <input class="site-search-field" type="text" placeholder="Поиск по сайту">
+                    <label for="site-search-field"> <!-- TODO: Place search pic on label? -->
+                        <p class="visually-hidden">Поле поиска по сайту</p>
                     </label>
-                    <button type="submit" href="#" class="site-search-button">Найти</button>
+                    <input class="site-search-field" type="text" placeholder="Поиск по сайту" id="site-search-field">
+                    <button class="site-search-button" type="submit">Найти</button>
                 </form>
                 <a href="#" class="user-link">Валентин Петухов</a>
                 <a href="#" class="login-link">Войти</a>
@@ -200,8 +198,8 @@
             <h2 class="visually-hidden">Список услуг магазина</h2>
             <ul class="services-list main-container">
                 <li class="services-item">
-                    <label for="service-1">доставка</label>
                     <input class="check-box visually-hidden" type="radio" name="service-item" id="service-1" checked>
+                    <label class="button" for="service-1">доставка</label>
                     <div class="service-details">
                         <p class="service-name">Доставка</p>
                         <p class="service-description">
@@ -213,8 +211,8 @@
                     </div>
                 </li>
                 <li class="services-item">
-                    <label for="service-2">гарантия</label>
                     <input class="check-box visually-hidden" type="radio" name="service-item" id="service-2">
+                    <label class="button" for="service-2">гарантия</label>
                     <div class="service-details">
                         <p class="service-name">Гарантия</p>
                         <p class="service-description">
@@ -226,8 +224,8 @@
                     </div>
                 </li>
                 <li class="services-item">
-                    <label for="service-3">кредит</label>
                     <input class="check-box visually-hidden" type="radio" name="service-item" id="service-3">
+                    <label class="button" for="service-3">кредит</label>
                     <div class="service-details">
                         <p class="service-name">Кредит</p>
                         <p class="service-description">

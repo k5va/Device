@@ -12,16 +12,14 @@
 <body>
     <header class="main-header">
         <nav class="main-navigation">
-            <a class="main-navigation-logo">
-                <img src="http://placehold.it/163x35" width="163" height="35" alt="Логотип интернет-магазина Device">
-            </a>
+            <a class="main-navigation-logo">DEVICE</a>
             <div class="user-navigation">
                 <form class="site-search-form" action="https://echo.htmlacademy.ru" method="GET">
-                    <label>
-                        <p class="visually-hidden">Поле для ввода строки поиска по сайту</p>
-                        <input class="site-search-field" type="text" placeholder="Поиск по сайту">
+                    <label for="site-search-field"> <!-- TODO: Place search pic on label? -->
+                        <p class="visually-hidden">Поле поиска по сайту</p>
                     </label>
-                    <button type="submit" href="#" class="site-search-button">Найти</button>
+                    <input class="site-search-field" type="text" placeholder="Поиск по сайту" id="site-search-field">
+                    <button class="site-search-button" type="submit">Найти</button>
                 </form>
                 <a href="#" class="user-link">Валентин Петухов</a>
                 <a href="#" class="login-link">Войти</a>
@@ -31,19 +29,19 @@
             </div>
             <ul class="site-navigation">
                 <li class="site-navigation-item">
-                    <a href="#">Каталог товаров</a>
+                    <a href="#">каталог товаров</a>
                     <ul class="sub-navigation">
                         <li class="sub-navigation-item"><a href="#">Виртуальная реальность</a></li>
                         <li class="sub-navigation-item"><a href="#">Фитнес-браслеты</a></li>
                         <li class="sub-navigation-item"><a href="#">Квадрокоптеры</a></li>
-                        <li class="sub-navigation-item"><a href="#">Моноподы для селфи</a></li>
+                        <li class="sub-navigation-item"><a href="monopods_catalog.html">Моноподы для селфи</a></li>
                         <li class="sub-navigation-item"><a href="#">Умные часы</a></li>
                         <li class="sub-navigation-item"><a href="#">Экшн-камеры</a></li>
                     </ul>
                 </li>
-                <li class="site-navigation-item"><a href="#">Доставка</a></li>
-                <li class="site-navigation-item"><a href="#">Гарантия</a></li>
-                <li class="site-navigation-item"><a href="#">Контакты</a></li>
+                <li class="site-navigation-item"><a href="#">доставка</a></li>
+                <li class="site-navigation-item"><a href="#">гарантия</a></li>
+                <li class="site-navigation-item"><a href="#">контакты</a></li>
             </ul>
         </nav>
     </header>
