@@ -123,22 +123,23 @@ a {
    
     position: absolute;
     top: -25px;
-/*     display: block;
-    margin: -25px 0 35px 0; */
 }
 
 .user-navigation {
     display: flex;
     margin-left: auto;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 .site-search-form {
     min-width: 440px;
     margin-right: 100px;
+    margin-top: -9px;
 }
 
 .site-search-field {
+    display: flex;
+    
     position: relative;
 }
 
@@ -150,8 +151,8 @@ a {
     width: 16px;
 
     position: absolute;
-    top: 3px;
-    left: 2px;
+    top: 17px;
+    left: 4px;
 }
 
 .site-search-input {
@@ -159,6 +160,7 @@ a {
     border: none;
 
     width: 340px;
+    height: 49px;
     padding-left: 37px;
 }
 
@@ -170,7 +172,8 @@ a {
 .site-search-button {
     background-color: transparent;
     border: 1px solid #000;
-    
+    padding: 15px 18px;
+
     display: none;
 }
 
