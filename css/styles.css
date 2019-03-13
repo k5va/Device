@@ -139,7 +139,7 @@ a {
 
 .site-search-field {
     display: flex;
-    
+
     position: relative;
 }
 
@@ -268,9 +268,11 @@ a {
     font-weight: 300;
     font-style: normal;
     letter-spacing: 0.2px;
+    text-transform: initial;
 
     list-style: none;
     padding: 0;
+    margin-top: 22px;
     width: 600px;
 
     display: flex;
