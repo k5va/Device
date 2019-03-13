@@ -408,6 +408,15 @@ a {
     padding: 0 58px;
 }
 
+.special-offers-features {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.special-offers-features thead {
+    order: 1;
+}
+
 .special-offers-features th {
     font-size: 13px;
     line-height: 1.5;
@@ -581,6 +590,19 @@ a {
     margin-right: 0;
 }
 
+.partners-image.selected {
+    display: none;
+}
+
+.partners-list-item:hover .partners-image.general {
+    display: none;
+}
+
+.partners-list-item:hover .partners-image.selected {
+    display: initial;
+}
+
+
 /* about us*/
 
 .about-us-contancts-wrapper {
@@ -721,12 +743,12 @@ a {
 }
 
 .footer-compare-link::before {
-    content: url("../img/compare.svg");
+    content: url("../img/compare-footer.svg");
     margin-right: 10px;
 }
 
 .footer-login-link::before {
-    content: url("../img/user.svg");
+    content: url("../img/user-footer.svg");
     margin-right: 14px;
 }
 
@@ -745,7 +767,7 @@ a {
 }
 
 .footer-cart-link::before {
-    content: url("../img/cart.svg");
+    content: url("../img/cart-footer.svg");
     margin-right: 10px;
 }
 
